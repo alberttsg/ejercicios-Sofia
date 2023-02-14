@@ -5,6 +5,7 @@ import { Allimages } from './components/dogsExercise/Allimages'
 import { Dogs } from './components/dogsExercise/Dogs'
 import { ImageRandom } from './components/dogsExercise/ImageRandom'
 import { SearcherBreeds } from './components/dogsExercise/SearcherBreeds'
+import { ImgGenerator } from './components/imgIA/imgGenerator'
 import { PokeApi } from './components/pokeApi/PokeApi'
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       {/* <ImageRandom/> */}
       {/* <Allimages/> */}
       {/* <SearcherBreeds/> */}
-      <PokeApi/>
+      {/* <PokeApi/> */}
+      <ImgGenerator/>
     </div>
   )
 }

@@ -16,7 +16,6 @@ export const SearcherBreeds = () => {
       const options = keys.map((e)=>(
          { value: `${e}`, label: `${e}`}
       ))
-      console.log(options)
       setBreedsSelect(options)
     }
     response()
@@ -25,7 +24,6 @@ export const SearcherBreeds = () => {
 
   const imgRandomSearcher = async (e) =>{
     const res = await axios.get(`https://dog.ceo/api/breed/${e.value}/images/random`)
-    console.log(res.data.message)
     setBreed(res.data.message)
   }
 

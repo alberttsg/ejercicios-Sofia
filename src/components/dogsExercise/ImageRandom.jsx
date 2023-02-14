@@ -9,7 +9,6 @@ const [ img, setImg ] = useState()
   const changeImg = async () =>{
     const res = await axios.get('https://dog.ceo/api/breeds/image/random')
       setImg(res.data.message)
-
   }
 
   return (

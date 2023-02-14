@@ -8,8 +8,8 @@ export const PokeApi = () => {
   const [ imgPokemon, setImgPokemon ] = useState('')
 
     const onePokemon = async () => {
+
       const id = Math.floor(Math.random() * (152 - 1)) + 1
-      console.log(id)
       const randomPokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
       console.log(randomPokemon.data.species.name)
       console.log(randomPokemon.data.sprites.front_shiny)

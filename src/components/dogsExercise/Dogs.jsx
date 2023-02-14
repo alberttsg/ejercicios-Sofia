@@ -8,10 +8,8 @@ export const Dogs = () => {
   const response = async()=>{
     const res = await axios.get('https://dog.ceo/api/breeds/list/all')
     const x = res.data.message
-    console.log(x)
 
     const keys = Object.keys(x)
-    console.log(keys)
     setBreeds(keys)
   }
   useEffect(() => {
